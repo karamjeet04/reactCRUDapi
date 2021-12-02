@@ -21,7 +21,7 @@ export default function List() {
     await axios.delete(`http://localhost:1111/students/${id}`);
     const newstudent = students.filter((item) => {
       console.log(item);
-      return item.id != id;
+      return item.id !== id;
     });
     setStudents(newstudent);
   };
